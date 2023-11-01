@@ -1,0 +1,9 @@
+fdk>=0.1.61
+mysql-connector-python
+
+
+
+
+
+
+
