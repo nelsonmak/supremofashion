@@ -33,7 +33,7 @@ def handler(ctx, data: io.BytesIO = None):
                 ctx, response_data=json.dumps(message),
                 headers={"Content-Type": "application/json"}
             )
-        result = {'CUST_ID': rv[0], 'DISCOUNT': rv[1]}
+        result = {'CUST_ID': rv[0], 'DISCOUNT': rv[1], 'MESSAGE': 'Success'}
         cur.close()	 
     except Exception as e:
         logging.error('Exception: %s' % e)	
